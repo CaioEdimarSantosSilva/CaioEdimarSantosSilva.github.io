@@ -1,12 +1,14 @@
-header {
-    background-color: orange;
-    
-}
-main {
-    background-color: aliceblue;
 
+
+{
+    font-size: 10rem;
 }
+.conteudo {
+    height: 100vh;
+    background-color: azure;
+}
+
 footer {
-    background-color: deepskyblue;
-
+    height: 20vh;
 }
+
