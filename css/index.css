@@ -1,11 +1,20 @@
 
+/*Lembrete: Mudar o estilo do scroll bar usando css!!!*/
 
-{
-    font-size: 10rem;
+header {
+        height: 20vh;
+        background-color: azure;
 }
+
 .conteudo {
     height: 100vh;
     background-color: azure;
+}
+.accordion{
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 footer {
