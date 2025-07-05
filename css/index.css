@@ -1,23 +1,34 @@
-
-/*Lembrete: Mudar o estilo do scroll bar usando css!!!*/
-
-header {
-        height: 20vh;
-        background-color: azure;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-.conteudo {
-    height: 100vh;
-    background-color: azure;
+nav {
+    display: flex;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 2px solid #969bff;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    z-index: 1000;
+    align-items: center;
+    justify-content: space-around;
 }
-.accordion{
-    width: 70vw;
-    margin-left: auto;
-    margin-right: auto;
 
+nav>a>img {
+    width: 65px;
+    height: auto;
 }
 
-footer {
-    height: 20vh;
+.menu {
+    text-decoration: none;
+    color: #5d534d;
+    font-size: 1.2em;
+    padding: 5px 10px;
+
 }
 
