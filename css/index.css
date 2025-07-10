@@ -6,7 +6,6 @@
     font-weight: 600;
 }
 
-
 nav {
     display: flex;
     background-color: white;
@@ -21,24 +20,90 @@ nav {
     border-bottom: #3B82F6 1px solid;
 }
 
-nav>a>img {
-    width: 300px;
-    height: auto;
+.simbolo {
+  width: 60px;
+  margin: 0;
+  padding: 0;
+  transition: transform 0.6s ease;
+}
+
+
+.logo:hover .simbolo {
+  animation: girar 12s linear infinite;
+}
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.texto_logo {
+  width: 250px;
+  margin: 0;
+  padding: 0;
 }
 
 
 
 .menu {
+    position: relative;
     text-decoration: none;
     color: #ffd00e;
     font-size: 1.4em;
     padding: 5px 10px;
-
 }
 
-.tema:hover {
+.menu::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    width: 0;
+    height: 2px;
+    background-color: #3B82F6;
+    transition: all 0.4s ease;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+.menu:hover::after {
+    width: 100%;
+}
+
+.tema {
+    position: relative;
+    text-decoration: none;
+    color: #ffd00e;
+    font-size: 1.4em;
+    padding: 5px 10px;
+}
+
+.tema::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    width: 0;
+    height: 2px;
+    background-color: #ffd00e;
+    transition: all 0.4s ease;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+.tema:hover::after {
+    width: 100%;
+}
+.tema:hover{
     color: #3B82F6;
 }
+
 
 .banner>img {
     width: 100%;
